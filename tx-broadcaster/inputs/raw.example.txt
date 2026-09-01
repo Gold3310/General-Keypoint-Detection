@@ -1,0 +1,6 @@
+# HEX mode — paste an ALREADY-SIGNED raw transaction below (one line, 0x…)
+# and rename this file to inputs/raw.txt
+# Broadcasting needs NO private key (the tx is already signed).
+# A dry-run (`node src/index.js raw --file inputs/raw.txt --dry-run`)
+# decodes it first so you can verify what you are about to publish.
+0x02f872018203110e8459682f008459682f0a82520894000000000000000000000000000000000000dead0180c080a0abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789a0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01234567

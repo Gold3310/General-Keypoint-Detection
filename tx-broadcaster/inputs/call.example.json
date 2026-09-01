@@ -1,0 +1,12 @@
+{
+  "_comment": "ABI mode — the tool encodes function+args into calldata, signs, broadcasts. Copy this file to inputs/call.json and edit. Example below = ERC-20 transfer of 1.0 USDT on BSC (decimal 6 ⇒ amount 1000000).",
+
+  "chain": "bsc",
+  "to": "0x55d398326f99059fF775485246999027B3197955",
+  "abi": [
+    "function transfer(address to, uint256 amount) returns (bool)"
+  ],
+  "function": "transfer",
+  "args": ["0x000000000000000000000000000000000000dEaD", "1000000"],
+  "value": "0"
+}

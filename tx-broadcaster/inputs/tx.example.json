@@ -1,0 +1,9 @@
+{
+  "_comment": "DATA mode — a 0-value tx carrying your message hex in the data field (e.g. DEXTools verification). Set 'to' to the recipient address shown by the service you are verifying with (for DEXTools verification this is usually your own deployer wallet). Copy this file to inputs/tx.json and edit.",
+
+  "chain": "ethereum",
+  "to": "0x8CB9f47a53ebF75EFB3b3AA2Beb9d381315f72d0",
+  "value": "0",
+  "data": "0x56657269667920796f7572206163636f756e7420696e20446578746f6f6c732e696f0a566572696669636174696f6e20746f6b656e2038636239663437613533656266373565666233623361613262656239643338313331356637326430",
+  "gasLimit": "30000"
+}
