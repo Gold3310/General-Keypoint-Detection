@@ -20,6 +20,10 @@ cp -r "$SRC/src" "$SRC/scripts" "$SRC/inputs" "$SRC/package.json" \
       "$SRC/package-lock.json" "$SRC/.env.example" "$SRC/.gitignore" \
       "$SRC/README.md" "$STAGE/"
 
+# README was written for the subfolder context; adapt for standalone root:
+sed -i 's|^cd tx-broadcaster$|# (you are already at the repo root)|' "$STAGE/README.md"
+sed -i 's|tx-broadcaster/.env|.env (repo root)|g' "$STAGE/README.md"
+
 cd "$STAGE"
 git init -b main -q
 git add -A
