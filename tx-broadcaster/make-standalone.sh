@@ -15,10 +15,10 @@ REMOTE="${1:?Usage: bash make-standalone.sh https://github.com/<you>/<repo>.git}
 SRC="$(cd "$(dirname "$0")" && pwd)"
 STAGE="$(mktemp -d)/tx-broadcaster"
 
-mkdir -p "$(dirname "$STAGE")"
+mkdir -p "$STAGE"
 cp -r "$SRC/src" "$SRC/scripts" "$SRC/inputs" "$SRC/package.json" \
       "$SRC/package-lock.json" "$SRC/.env.example" "$SRC/.gitignore" \
-      "$SRC/README.md" "$STAGE/" 2>/dev/null
+      "$SRC/README.md" "$STAGE/"
 
 cd "$STAGE"
 git init -b main -q
